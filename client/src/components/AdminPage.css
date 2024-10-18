@@ -1,0 +1,82 @@
+.admin-page {
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px;
+}
+
+.search-bar button {
+    margin-left: 10px;
+    padding: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.add-button {
+    margin-left: 10px;
+}
+
+.products-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-item img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-actions button {
+    margin-left: 10px;
+}
+
+.popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    max-width: 90%;
+}
+
+.modal-actions button {
+    margin-right: 10px;
+}

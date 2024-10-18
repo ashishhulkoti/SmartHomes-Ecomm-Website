@@ -1,0 +1,81 @@
+.products-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative; /* Position relative to allow absolute positioning of suggestions */
+}
+
+.search-bar-container {
+  position: relative; /* Relative positioning for absolute children */
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Added border radius for a rounded look */
+}
+
+.search-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px; /* Added border radius for the button */
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.suggestions-list {
+  position: absolute; /* Absolute positioning to overlay suggestions */
+  top: 100%; /* Place below the search bar */
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0; /* Added padding for spacing */
+  z-index: 1000; /* Ensures it appears on top of other elements */
+  border-radius: 4px; /* Rounded corners for suggestions box */
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product-info h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
