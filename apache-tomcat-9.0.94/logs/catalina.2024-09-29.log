@@ -1,0 +1,749 @@
+29-Sep-2024 00:00:10.531 INFO [http-nio-8080-exec-87] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:00:10.538 INFO [http-nio-8080-exec-87] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:00:10.571 INFO [cluster-ClusterId{value='66f8deda5456345a981bcd92', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:9, serverValue:681217}] to localhost:27017
+29-Sep-2024 00:00:10.572 INFO [cluster-ClusterId{value='66f8deda5456345a981bcd92', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=393917}
+29-Sep-2024 00:00:10.577 INFO [http-nio-8080-exec-87] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:10, serverValue:681218}] to localhost:27017
+29-Sep-2024 00:06:15.414 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/store-servlet]
+29-Sep-2024 00:06:15.470 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [store-servlet] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Sep-2024 00:06:15.472 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.472 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8a5895456345a981bcd8e', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.473 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.473 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8dca35456345a981bcd8f', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.473 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.474 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8dca75456345a981bcd90', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.474 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-3-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.474 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8dd525456345a981bcd91', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.475 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-4-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.475 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8deda5456345a981bcd92', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:15.475 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-5-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:20.449 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:960)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:06:25.501 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+29-Sep-2024 00:06:26.401 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Sep-2024 00:06:26.403 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [902] ms
+29-Sep-2024 00:06:27.086 INFO [http-nio-8080-exec-94] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:06:27.111 INFO [http-nio-8080-exec-94] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:06:27.117 INFO [cluster-ClusterId{value='66f8e053947cae24efd4994d', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:1, serverValue:681219}] to localhost:27017
+29-Sep-2024 00:06:27.119 INFO [cluster-ClusterId{value='66f8e053947cae24efd4994d', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1130916}
+29-Sep-2024 00:06:27.128 INFO [http-nio-8080-exec-94] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:2, serverValue:681220}] to localhost:27017
+29-Sep-2024 00:06:33.391 INFO [http-nio-8080-exec-93] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:06:33.393 INFO [http-nio-8080-exec-93] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:06:33.419 INFO [cluster-ClusterId{value='66f8e059947cae24efd4994e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:3, serverValue:681221}] to localhost:27017
+29-Sep-2024 00:06:33.424 INFO [cluster-ClusterId{value='66f8e059947cae24efd4994e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4911084}
+29-Sep-2024 00:06:33.431 INFO [http-nio-8080-exec-93] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:4, serverValue:681222}] to localhost:27017
+29-Sep-2024 00:07:04.771 INFO [http-nio-8080-exec-88] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:07:04.788 INFO [http-nio-8080-exec-88] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:07:04.793 INFO [cluster-ClusterId{value='66f8e078947cae24efd4994f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:5, serverValue:681223}] to localhost:27017
+29-Sep-2024 00:07:04.794 INFO [cluster-ClusterId{value='66f8e078947cae24efd4994f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=550000}
+29-Sep-2024 00:07:04.798 INFO [http-nio-8080-exec-88] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:6, serverValue:681224}] to localhost:27017
+29-Sep-2024 00:07:05.086 INFO [http-nio-8080-exec-92] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:07:05.087 INFO [http-nio-8080-exec-92] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:07:05.091 INFO [cluster-ClusterId{value='66f8e079947cae24efd49950', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:7, serverValue:681225}] to localhost:27017
+29-Sep-2024 00:07:05.092 INFO [cluster-ClusterId{value='66f8e079947cae24efd49950', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=499833}
+29-Sep-2024 00:07:05.097 INFO [http-nio-8080-exec-92] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:8, serverValue:681226}] to localhost:27017
+29-Sep-2024 00:08:16.486 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/store-servlet]
+29-Sep-2024 00:08:16.511 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [store-servlet] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Sep-2024 00:08:16.512 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e053947cae24efd4994d', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:16.513 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:16.513 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:16.513 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e059947cae24efd4994e', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:16.513 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:16.513 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e078947cae24efd4994f', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:16.513 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-3-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:16.513 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e079947cae24efd49950', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:16.513 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-4-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:17.302 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:960)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:08:26.539 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+29-Sep-2024 00:08:26.901 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Sep-2024 00:08:26.903 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [365] ms
+29-Sep-2024 00:08:27.340 INFO [http-nio-8080-exec-99] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:08:27.383 INFO [http-nio-8080-exec-99] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:08:27.460 INFO [cluster-ClusterId{value='66f8e0cb4b4a33283932beeb', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:1, serverValue:681227}] to localhost:27017
+29-Sep-2024 00:08:27.463 INFO [cluster-ClusterId{value='66f8e0cb4b4a33283932beeb', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1932791}
+29-Sep-2024 00:08:27.520 INFO [http-nio-8080-exec-99] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:2, serverValue:681228}] to localhost:27017
+29-Sep-2024 00:08:51.905 INFO [http-nio-8080-exec-97] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:08:51.907 INFO [http-nio-8080-exec-97] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:08:51.911 INFO [cluster-ClusterId{value='66f8e0e34b4a33283932beec', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:3, serverValue:681229}] to localhost:27017
+29-Sep-2024 00:08:51.912 INFO [cluster-ClusterId{value='66f8e0e34b4a33283932beec', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=477834}
+29-Sep-2024 00:08:51.917 INFO [http-nio-8080-exec-97] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:4, serverValue:681230}] to localhost:27017
+29-Sep-2024 00:11:59.687 INFO [http-nio-8080-exec-104] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:11:59.694 INFO [http-nio-8080-exec-104] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:11:59.702 INFO [cluster-ClusterId{value='66f8e19f4b4a33283932beed', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:5, serverValue:681231}] to localhost:27017
+29-Sep-2024 00:11:59.703 INFO [cluster-ClusterId{value='66f8e19f4b4a33283932beed', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=638917}
+29-Sep-2024 00:11:59.712 INFO [http-nio-8080-exec-104] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:6, serverValue:681232}] to localhost:27017
+29-Sep-2024 00:12:11.504 INFO [http-nio-8080-exec-106] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:12:11.509 INFO [http-nio-8080-exec-106] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:12:11.516 INFO [cluster-ClusterId{value='66f8e1ab4b4a33283932beee', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:7, serverValue:681233}] to localhost:27017
+29-Sep-2024 00:12:11.517 INFO [cluster-ClusterId{value='66f8e1ab4b4a33283932beee', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=664750}
+29-Sep-2024 00:12:11.524 INFO [http-nio-8080-exec-106] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:8, serverValue:681234}] to localhost:27017
+29-Sep-2024 00:12:15.675 INFO [http-nio-8080-exec-108] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:12:15.676 INFO [http-nio-8080-exec-108] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:12:15.680 INFO [cluster-ClusterId{value='66f8e1af4b4a33283932beef', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:9, serverValue:681235}] to localhost:27017
+29-Sep-2024 00:12:15.681 INFO [cluster-ClusterId{value='66f8e1af4b4a33283932beef', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=470875}
+29-Sep-2024 00:12:15.686 INFO [http-nio-8080-exec-108] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:10, serverValue:681236}] to localhost:27017
+29-Sep-2024 00:12:34.593 INFO [http-nio-8080-exec-107] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:12:34.605 INFO [http-nio-8080-exec-107] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:12:34.610 INFO [cluster-ClusterId{value='66f8e1c24b4a33283932bef0', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:11, serverValue:681237}] to localhost:27017
+29-Sep-2024 00:12:34.611 INFO [cluster-ClusterId{value='66f8e1c24b4a33283932bef0', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=277250}
+29-Sep-2024 00:12:34.617 INFO [http-nio-8080-exec-107] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:12, serverValue:681238}] to localhost:27017
+29-Sep-2024 00:12:39.380 INFO [http-nio-8080-exec-111] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:12:39.382 INFO [http-nio-8080-exec-111] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:12:39.388 INFO [cluster-ClusterId{value='66f8e1c74b4a33283932bef1', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:13, serverValue:681239}] to localhost:27017
+29-Sep-2024 00:12:39.389 INFO [cluster-ClusterId{value='66f8e1c74b4a33283932bef1', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=922291}
+29-Sep-2024 00:12:39.394 INFO [http-nio-8080-exec-111] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:14, serverValue:681240}] to localhost:27017
+29-Sep-2024 00:18:02.519 INFO [http-nio-8080-exec-104] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:18:02.532 INFO [http-nio-8080-exec-104] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:18:02.552 INFO [cluster-ClusterId{value='66f8e30a4b4a33283932bef2', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:15, serverValue:681241}] to localhost:27017
+29-Sep-2024 00:18:02.553 INFO [cluster-ClusterId{value='66f8e30a4b4a33283932bef2', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=457209}
+29-Sep-2024 00:18:02.558 INFO [http-nio-8080-exec-104] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:16, serverValue:681242}] to localhost:27017
+29-Sep-2024 00:18:39.311 INFO [http-nio-8080-exec-106] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:18:39.313 INFO [http-nio-8080-exec-106] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:18:39.317 INFO [cluster-ClusterId{value='66f8e32f4b4a33283932bef3', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:17, serverValue:681243}] to localhost:27017
+29-Sep-2024 00:18:39.318 INFO [cluster-ClusterId{value='66f8e32f4b4a33283932bef3', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=395167}
+29-Sep-2024 00:18:39.321 INFO [http-nio-8080-exec-106] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:18, serverValue:681244}] to localhost:27017
+29-Sep-2024 00:18:44.284 INFO [http-nio-8080-exec-108] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:18:44.285 INFO [http-nio-8080-exec-108] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:18:44.289 INFO [cluster-ClusterId{value='66f8e3344b4a33283932bef4', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:19, serverValue:681245}] to localhost:27017
+29-Sep-2024 00:18:44.289 INFO [cluster-ClusterId{value='66f8e3344b4a33283932bef4', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=250209}
+29-Sep-2024 00:18:44.295 INFO [http-nio-8080-exec-108] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:20, serverValue:681246}] to localhost:27017
+29-Sep-2024 00:18:47.525 INFO [http-nio-8080-exec-111] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:18:47.527 INFO [http-nio-8080-exec-111] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:18:47.531 INFO [cluster-ClusterId{value='66f8e3374b4a33283932bef5', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:21, serverValue:681247}] to localhost:27017
+29-Sep-2024 00:18:47.531 INFO [cluster-ClusterId{value='66f8e3374b4a33283932bef5', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=303084}
+29-Sep-2024 00:18:47.540 INFO [http-nio-8080-exec-111] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:22, serverValue:681248}] to localhost:27017
+29-Sep-2024 00:19:09.934 INFO [http-nio-8080-exec-107] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 00:19:09.936 INFO [http-nio-8080-exec-107] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 00:19:09.942 INFO [cluster-ClusterId{value='66f8e34d4b4a33283932bef6', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:23, serverValue:681249}] to localhost:27017
+29-Sep-2024 00:19:09.942 INFO [cluster-ClusterId{value='66f8e34d4b4a33283932bef6', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=552875}
+29-Sep-2024 00:19:09.948 INFO [http-nio-8080-exec-107] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:24, serverValue:681250}] to localhost:27017
+29-Sep-2024 00:19:40.317 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Sep-2024 00:19:40.320 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Sep-2024 00:19:40.326 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [store-servlet] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e0cb4b4a33283932beeb', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e0e34b4a33283932beec', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e19f4b4a33283932beed', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-3-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e1ab4b4a33283932beee', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-4-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e1af4b4a33283932beef', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-5-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e1c74b4a33283932bef1', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-7-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e30a4b4a33283932bef2', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-8-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.338 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e32f4b4a33283932bef3', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.339 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-9-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.339 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e3344b4a33283932bef4', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.339 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-10-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.339 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='66f8e34d4b4a33283932bef6', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.339 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-12-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+29-Sep-2024 00:19:40.344 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Sep-2024 00:19:40.357 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Sep-2024 19:50:52.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.94
+29-Sep-2024 19:50:52.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 5 2024 13:35:59 UTC
+29-Sep-2024 19:50:52.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.94.0
+29-Sep-2024 19:50:52.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Sep-2024 19:50:52.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            14.6.1
+29-Sep-2024 19:50:52.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Sep-2024 19:50:52.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home
+29-Sep-2024 19:50:52.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.3+9-LTS
+29-Sep-2024 19:50:52.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+29-Sep-2024 19:50:52.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/ashish/Documents/lib/apache-tomcat-9.0.94
+29-Sep-2024 19:50:52.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/ashish/Documents/lib/apache-tomcat-9.0.94
+29-Sep-2024 19:50:52.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Sep-2024 19:50:52.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Sep-2024 19:50:52.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/ashish/Documents/lib/apache-tomcat-9.0.94/conf/logging.properties
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/ashish/Documents/lib/apache-tomcat-9.0.94
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/ashish/Documents/lib/apache-tomcat-9.0.94
+29-Sep-2024 19:50:52.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/ashish/Documents/lib/apache-tomcat-9.0.94/temp
+29-Sep-2024 19:50:52.346 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/ashish/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Sep-2024 19:50:52.527 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Sep-2024 19:50:52.567 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [380] milliseconds
+29-Sep-2024 19:50:52.586 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Sep-2024 19:50:52.586 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.94]
+29-Sep-2024 19:50:52.594 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+29-Sep-2024 19:50:53.034 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Sep-2024 19:50:53.049 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [455] ms
+29-Sep-2024 19:50:53.049 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/docs]
+29-Sep-2024 19:50:53.061 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+29-Sep-2024 19:50:53.061 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/docs] startup failed due to previous errors
+29-Sep-2024 19:50:53.069 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/docs] has finished in [20] ms
+29-Sep-2024 19:50:53.069 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/manager]
+29-Sep-2024 19:50:53.085 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+29-Sep-2024 19:50:53.085 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/manager] startup failed due to previous errors
+29-Sep-2024 19:50:53.086 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/manager] has finished in [17] ms
+29-Sep-2024 19:50:53.086 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/examples]
+29-Sep-2024 19:50:53.170 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+29-Sep-2024 19:50:53.170 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+29-Sep-2024 19:50:53.171 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/examples] has finished in [85] ms
+29-Sep-2024 19:50:53.171 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/ROOT]
+29-Sep-2024 19:50:53.178 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+29-Sep-2024 19:50:53.178 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [] startup failed due to previous errors
+29-Sep-2024 19:50:53.179 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/ROOT] has finished in [8] ms
+29-Sep-2024 19:50:53.179 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/host-manager]
+29-Sep-2024 19:50:53.187 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+29-Sep-2024 19:50:53.187 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/host-manager] startup failed due to previous errors
+29-Sep-2024 19:50:53.188 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/host-manager] has finished in [9] ms
+29-Sep-2024 19:50:53.189 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Sep-2024 19:50:53.194 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [626] milliseconds
+29-Sep-2024 19:54:34.473 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 19:54:34.506 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 19:54:34.516 INFO [cluster-ClusterId{value='66f9f6ca72b43f638b0c8d61', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:1, serverValue:681252}] to localhost:27017
+29-Sep-2024 19:54:34.518 INFO [cluster-ClusterId{value='66f9f6ca72b43f638b0c8d61', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1351042}
+29-Sep-2024 19:54:34.530 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:2, serverValue:681253}] to localhost:27017
+29-Sep-2024 20:04:22.316 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:04:22.321 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:04:22.335 INFO [cluster-ClusterId{value='66f9f91672b43f638b0c8d62', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:3, serverValue:681254}] to localhost:27017
+29-Sep-2024 20:04:22.338 INFO [cluster-ClusterId{value='66f9f91672b43f638b0c8d62', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1537875}
+29-Sep-2024 20:04:22.350 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:4, serverValue:681255}] to localhost:27017
+29-Sep-2024 20:11:47.241 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:11:47.249 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:11:47.263 INFO [cluster-ClusterId{value='66f9fad372b43f638b0c8d63', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:5, serverValue:681256}] to localhost:27017
+29-Sep-2024 20:11:47.264 INFO [cluster-ClusterId{value='66f9fad372b43f638b0c8d63', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=471084}
+29-Sep-2024 20:11:47.269 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:6, serverValue:681257}] to localhost:27017
+29-Sep-2024 20:12:11.418 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:12:11.459 INFO [cluster-ClusterId{value='66f9faeb72b43f638b0c8d64', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:7, serverValue:681258}] to localhost:27017
+29-Sep-2024 20:12:11.459 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:12:11.460 INFO [cluster-ClusterId{value='66f9faeb72b43f638b0c8d64', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=545917}
+29-Sep-2024 20:12:11.464 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:8, serverValue:681259}] to localhost:27017
+29-Sep-2024 20:12:31.380 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:12:31.382 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:12:31.387 INFO [cluster-ClusterId{value='66f9faff72b43f638b0c8d65', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:9, serverValue:681260}] to localhost:27017
+29-Sep-2024 20:12:31.388 INFO [cluster-ClusterId{value='66f9faff72b43f638b0c8d65', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=607500}
+29-Sep-2024 20:12:31.393 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:10, serverValue:681261}] to localhost:27017
+29-Sep-2024 20:12:39.717 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:12:39.718 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:12:39.722 INFO [cluster-ClusterId{value='66f9fb0772b43f638b0c8d66', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:11, serverValue:681262}] to localhost:27017
+29-Sep-2024 20:12:39.723 INFO [cluster-ClusterId{value='66f9fb0772b43f638b0c8d66', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=767625}
+29-Sep-2024 20:12:39.727 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:12, serverValue:681263}] to localhost:27017
+29-Sep-2024 20:13:06.930 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:13:06.933 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:13:06.937 INFO [cluster-ClusterId{value='66f9fb2272b43f638b0c8d67', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:13, serverValue:681264}] to localhost:27017
+29-Sep-2024 20:13:06.938 INFO [cluster-ClusterId{value='66f9fb2272b43f638b0c8d67', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=275291}
+29-Sep-2024 20:13:06.944 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:14, serverValue:681265}] to localhost:27017
+29-Sep-2024 20:13:16.941 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:13:16.943 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:13:16.960 INFO [cluster-ClusterId{value='66f9fb2c72b43f638b0c8d68', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:15, serverValue:681266}] to localhost:27017
+29-Sep-2024 20:13:16.961 INFO [cluster-ClusterId{value='66f9fb2c72b43f638b0c8d68', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=939667}
+29-Sep-2024 20:13:16.965 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:16, serverValue:681267}] to localhost:27017
+29-Sep-2024 20:13:31.827 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:13:31.828 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:13:31.833 INFO [cluster-ClusterId{value='66f9fb3b72b43f638b0c8d69', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:17, serverValue:681268}] to localhost:27017
+29-Sep-2024 20:13:31.834 INFO [cluster-ClusterId{value='66f9fb3b72b43f638b0c8d69', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=364584}
+29-Sep-2024 20:13:31.839 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:18, serverValue:681269}] to localhost:27017
+29-Sep-2024 20:13:38.024 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:13:38.026 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:13:38.031 INFO [cluster-ClusterId{value='66f9fb4272b43f638b0c8d6a', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:19, serverValue:681270}] to localhost:27017
+29-Sep-2024 20:13:38.032 INFO [cluster-ClusterId{value='66f9fb4272b43f638b0c8d6a', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=419292}
+29-Sep-2024 20:13:38.037 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:20, serverValue:681271}] to localhost:27017
+29-Sep-2024 20:13:48.004 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:13:48.025 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:13:48.044 INFO [cluster-ClusterId{value='66f9fb4c72b43f638b0c8d6b', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:21, serverValue:681272}] to localhost:27017
+29-Sep-2024 20:13:48.045 INFO [cluster-ClusterId{value='66f9fb4c72b43f638b0c8d6b', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=328208}
+29-Sep-2024 20:13:48.049 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:22, serverValue:681273}] to localhost:27017
+29-Sep-2024 20:14:48.859 INFO [http-nio-8080-exec-7] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:14:48.862 INFO [http-nio-8080-exec-7] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:14:48.868 INFO [cluster-ClusterId{value='66f9fb8872b43f638b0c8d6c', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:23, serverValue:681274}] to localhost:27017
+29-Sep-2024 20:14:48.869 INFO [cluster-ClusterId{value='66f9fb8872b43f638b0c8d6c', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=532625}
+29-Sep-2024 20:14:48.873 INFO [http-nio-8080-exec-7] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:24, serverValue:681275}] to localhost:27017
+29-Sep-2024 20:15:11.340 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:15:11.343 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:15:11.348 INFO [cluster-ClusterId{value='66f9fb9f72b43f638b0c8d6d', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:25, serverValue:681276}] to localhost:27017
+29-Sep-2024 20:15:11.349 INFO [cluster-ClusterId{value='66f9fb9f72b43f638b0c8d6d', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=671417}
+29-Sep-2024 20:15:11.353 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:26, serverValue:681277}] to localhost:27017
+29-Sep-2024 20:15:18.601 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:15:18.602 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:15:18.607 INFO [cluster-ClusterId{value='66f9fba672b43f638b0c8d6e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:27, serverValue:681278}] to localhost:27017
+29-Sep-2024 20:15:18.608 INFO [cluster-ClusterId{value='66f9fba672b43f638b0c8d6e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=526084}
+29-Sep-2024 20:15:18.614 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:28, serverValue:681279}] to localhost:27017
+29-Sep-2024 20:16:20.205 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:16:20.209 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:16:20.216 INFO [cluster-ClusterId{value='66f9fbe472b43f638b0c8d6f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:29, serverValue:681280}] to localhost:27017
+29-Sep-2024 20:16:20.217 INFO [cluster-ClusterId{value='66f9fbe472b43f638b0c8d6f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=474750}
+29-Sep-2024 20:16:20.221 INFO [http-nio-8080-exec-3] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:30, serverValue:681281}] to localhost:27017
+29-Sep-2024 20:16:44.457 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:16:44.460 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:16:44.464 INFO [cluster-ClusterId{value='66f9fbfc72b43f638b0c8d70', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:31, serverValue:681282}] to localhost:27017
+29-Sep-2024 20:16:44.466 INFO [cluster-ClusterId{value='66f9fbfc72b43f638b0c8d70', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=412458}
+29-Sep-2024 20:16:44.470 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:32, serverValue:681283}] to localhost:27017
+29-Sep-2024 20:16:57.627 INFO [http-nio-8080-exec-9] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:16:57.628 INFO [http-nio-8080-exec-9] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:16:57.632 INFO [cluster-ClusterId{value='66f9fc0972b43f638b0c8d71', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:33, serverValue:681284}] to localhost:27017
+29-Sep-2024 20:16:57.632 INFO [cluster-ClusterId{value='66f9fc0972b43f638b0c8d71', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=150250}
+29-Sep-2024 20:16:57.635 INFO [http-nio-8080-exec-9] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:34, serverValue:681285}] to localhost:27017
+29-Sep-2024 20:17:21.304 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:21.306 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:21.310 INFO [cluster-ClusterId{value='66f9fc2172b43f638b0c8d72', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:35, serverValue:681286}] to localhost:27017
+29-Sep-2024 20:17:21.311 INFO [cluster-ClusterId{value='66f9fc2172b43f638b0c8d72', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=440625}
+29-Sep-2024 20:17:21.316 INFO [http-nio-8080-exec-5] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:36, serverValue:681287}] to localhost:27017
+29-Sep-2024 20:17:22.686 INFO [http-nio-8080-exec-7] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:22.688 INFO [http-nio-8080-exec-7] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:22.692 INFO [cluster-ClusterId{value='66f9fc2272b43f638b0c8d73', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:37, serverValue:681288}] to localhost:27017
+29-Sep-2024 20:17:22.693 INFO [cluster-ClusterId{value='66f9fc2272b43f638b0c8d73', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=489792}
+29-Sep-2024 20:17:22.697 INFO [http-nio-8080-exec-7] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:38, serverValue:681289}] to localhost:27017
+29-Sep-2024 20:17:23.859 INFO [http-nio-8080-exec-9] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:23.860 INFO [http-nio-8080-exec-9] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:23.874 INFO [cluster-ClusterId{value='66f9fc2372b43f638b0c8d74', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:39, serverValue:681290}] to localhost:27017
+29-Sep-2024 20:17:23.876 INFO [cluster-ClusterId{value='66f9fc2372b43f638b0c8d74', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1064542}
+29-Sep-2024 20:17:23.887 INFO [http-nio-8080-exec-9] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:40, serverValue:681291}] to localhost:27017
+29-Sep-2024 20:17:25.220 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:25.221 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:25.224 INFO [cluster-ClusterId{value='66f9fc2572b43f638b0c8d75', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:41, serverValue:681292}] to localhost:27017
+29-Sep-2024 20:17:25.225 INFO [cluster-ClusterId{value='66f9fc2572b43f638b0c8d75', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=203000}
+29-Sep-2024 20:17:25.228 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:42, serverValue:681293}] to localhost:27017
+29-Sep-2024 20:17:27.134 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:27.135 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:27.138 INFO [cluster-ClusterId{value='66f9fc2772b43f638b0c8d76', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:43, serverValue:681294}] to localhost:27017
+29-Sep-2024 20:17:27.139 INFO [cluster-ClusterId{value='66f9fc2772b43f638b0c8d76', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=166000}
+29-Sep-2024 20:17:27.144 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:44, serverValue:681295}] to localhost:27017
+29-Sep-2024 20:17:27.438 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:27.439 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:27.443 INFO [cluster-ClusterId{value='66f9fc2772b43f638b0c8d77', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:45, serverValue:681296}] to localhost:27017
+29-Sep-2024 20:17:27.444 INFO [cluster-ClusterId{value='66f9fc2772b43f638b0c8d77', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=488542}
+29-Sep-2024 20:17:27.448 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:46, serverValue:681297}] to localhost:27017
+29-Sep-2024 20:17:27.675 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:27.676 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:27.680 INFO [cluster-ClusterId{value='66f9fc2772b43f638b0c8d78', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:47, serverValue:681298}] to localhost:27017
+29-Sep-2024 20:17:27.681 INFO [cluster-ClusterId{value='66f9fc2772b43f638b0c8d78', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=302959}
+29-Sep-2024 20:17:27.685 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:48, serverValue:681299}] to localhost:27017
+29-Sep-2024 20:17:27.926 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:27.927 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:27.931 INFO [cluster-ClusterId{value='66f9fc2772b43f638b0c8d79', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:49, serverValue:681300}] to localhost:27017
+29-Sep-2024 20:17:27.932 INFO [cluster-ClusterId{value='66f9fc2772b43f638b0c8d79', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=635292}
+29-Sep-2024 20:17:27.938 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:50, serverValue:681301}] to localhost:27017
+29-Sep-2024 20:17:28.149 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:28.150 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:28.155 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7a', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:51, serverValue:681302}] to localhost:27017
+29-Sep-2024 20:17:28.156 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7a', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=404125}
+29-Sep-2024 20:17:28.161 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:52, serverValue:681303}] to localhost:27017
+29-Sep-2024 20:17:28.268 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:28.269 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:28.272 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7b', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:53, serverValue:681304}] to localhost:27017
+29-Sep-2024 20:17:28.272 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7b', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=198666}
+29-Sep-2024 20:17:28.276 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:54, serverValue:681305}] to localhost:27017
+29-Sep-2024 20:17:28.496 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:28.497 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:28.501 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7c', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:55, serverValue:681306}] to localhost:27017
+29-Sep-2024 20:17:28.502 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7c', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=492958}
+29-Sep-2024 20:17:28.507 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:56, serverValue:681307}] to localhost:27017
+29-Sep-2024 20:17:28.628 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:28.629 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:28.644 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7d', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:57, serverValue:681308}] to localhost:27017
+29-Sep-2024 20:17:28.645 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7d', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=521709}
+29-Sep-2024 20:17:28.649 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:58, serverValue:681309}] to localhost:27017
+29-Sep-2024 20:17:28.758 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:28.759 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:28.763 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:59, serverValue:681310}] to localhost:27017
+29-Sep-2024 20:17:28.764 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7e', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=519375}
+29-Sep-2024 20:17:28.769 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:60, serverValue:681311}] to localhost:27017
+29-Sep-2024 20:17:28.917 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:28.918 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:28.922 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:61, serverValue:681312}] to localhost:27017
+29-Sep-2024 20:17:28.923 INFO [cluster-ClusterId{value='66f9fc2872b43f638b0c8d7f', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=357125}
+29-Sep-2024 20:17:28.927 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:62, serverValue:681313}] to localhost:27017
+29-Sep-2024 20:17:29.061 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:29.062 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:29.065 INFO [cluster-ClusterId{value='66f9fc2972b43f638b0c8d80', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:63, serverValue:681314}] to localhost:27017
+29-Sep-2024 20:17:29.066 INFO [cluster-ClusterId{value='66f9fc2972b43f638b0c8d80', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=453541}
+29-Sep-2024 20:17:29.071 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:64, serverValue:681315}] to localhost:27017
+29-Sep-2024 20:17:29.758 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:29.760 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:29.766 INFO [cluster-ClusterId{value='66f9fc2972b43f638b0c8d81', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:65, serverValue:681316}] to localhost:27017
+29-Sep-2024 20:17:29.767 INFO [cluster-ClusterId{value='66f9fc2972b43f638b0c8d81', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=699917}
+29-Sep-2024 20:17:29.774 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:66, serverValue:681317}] to localhost:27017
+29-Sep-2024 20:17:29.886 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:29.887 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:29.890 INFO [cluster-ClusterId{value='66f9fc2972b43f638b0c8d82', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:67, serverValue:681318}] to localhost:27017
+29-Sep-2024 20:17:29.891 INFO [cluster-ClusterId{value='66f9fc2972b43f638b0c8d82', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=328375}
+29-Sep-2024 20:17:29.897 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:68, serverValue:681319}] to localhost:27017
+29-Sep-2024 20:17:30.071 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:30.073 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:30.076 INFO [cluster-ClusterId{value='66f9fc2a72b43f638b0c8d83', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:69, serverValue:681320}] to localhost:27017
+29-Sep-2024 20:17:30.077 INFO [cluster-ClusterId{value='66f9fc2a72b43f638b0c8d83', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=466833}
+29-Sep-2024 20:17:30.093 INFO [http-nio-8080-exec-10] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:70, serverValue:681321}] to localhost:27017
+29-Sep-2024 20:17:30.272 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:30.273 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:30.277 INFO [cluster-ClusterId{value='66f9fc2a72b43f638b0c8d84', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:71, serverValue:681322}] to localhost:27017
+29-Sep-2024 20:17:30.279 INFO [cluster-ClusterId{value='66f9fc2a72b43f638b0c8d84', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=877584}
+29-Sep-2024 20:17:30.283 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:72, serverValue:681323}] to localhost:27017
+29-Sep-2024 20:17:30.876 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:30.877 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:30.881 INFO [cluster-ClusterId{value='66f9fc2a72b43f638b0c8d85', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:73, serverValue:681324}] to localhost:27017
+29-Sep-2024 20:17:30.882 INFO [cluster-ClusterId{value='66f9fc2a72b43f638b0c8d85', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=353292}
+29-Sep-2024 20:17:30.887 INFO [http-nio-8080-exec-4] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:74, serverValue:681325}] to localhost:27017
+29-Sep-2024 20:17:32.982 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:32.983 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:32.987 INFO [cluster-ClusterId{value='66f9fc2c72b43f638b0c8d86', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:75, serverValue:681326}] to localhost:27017
+29-Sep-2024 20:17:32.987 INFO [cluster-ClusterId{value='66f9fc2c72b43f638b0c8d86', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=233166}
+29-Sep-2024 20:17:32.991 INFO [http-nio-8080-exec-6] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:76, serverValue:681327}] to localhost:27017
+29-Sep-2024 20:17:34.470 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:34.474 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:34.479 INFO [cluster-ClusterId{value='66f9fc2e72b43f638b0c8d88', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:77, serverValue:681328}] to localhost:27017
+29-Sep-2024 20:17:34.480 INFO [cluster-ClusterId{value='66f9fc2e72b43f638b0c8d88', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=651792}
+29-Sep-2024 20:17:34.485 INFO [http-nio-8080-exec-8] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:78, serverValue:681329}] to localhost:27017
+29-Sep-2024 20:17:45.168 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+29-Sep-2024 20:17:45.171 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+29-Sep-2024 20:17:45.175 INFO [cluster-ClusterId{value='66f9fc3972b43f638b0c8d89', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:79, serverValue:681330}] to localhost:27017
+29-Sep-2024 20:17:45.175 INFO [cluster-ClusterId{value='66f9fc3972b43f638b0c8d89', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=398750}
+29-Sep-2024 20:17:45.181 INFO [http-nio-8080-exec-2] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:80, serverValue:681331}] to localhost:27017

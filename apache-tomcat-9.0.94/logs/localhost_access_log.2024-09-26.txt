@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:02:07 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 6518
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:02:13 -0500] "GET /store-servlet/api/products/1 HTTP/1.1" 200 221
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:02:23 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 6518
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:02:24 -0500] "GET /store-servlet/api/products/8 HTTP/1.1" 200 213
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:02:44 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 6518
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:02:53 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 6518
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:02:55 -0500] "GET /store-servlet/api/products/4 HTTP/1.1" 200 229
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:03:03 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 6518
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:03:12 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 6518
+0:0:0:0:0:0:0:1 - - [26/Sep/2024:03:03:20 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 6518

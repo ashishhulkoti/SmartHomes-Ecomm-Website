@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:14:32 -0500] "GET /store-servlet/api/sales-report/daily-transactions HTTP/1.1" 200 702
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:14:32 -0500] "GET /store-servlet/api/sales-report/products HTTP/1.1" 200 1347
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:14:36 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 8495
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:14:37 -0500] "GET /store-servlet/api/inventory/products/rebates HTTP/1.1" 200 1252
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:14:37 -0500] "GET /store-servlet/api/inventory/products/on-sale HTTP/1.1" 200 1317
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:14:37 -0500] "GET /store-servlet/api/inventory/products HTTP/1.1" 200 2380
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:14:44 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 8495
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:14:45 -0500] "GET /store-servlet/api/sales-report/daily-transactions HTTP/1.1" 200 702
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:14:45 -0500] "GET /store-servlet/api/sales-report/products HTTP/1.1" 200 1347
+0:0:0:0:0:0:0:1 - - [11/Oct/2024:09:15:00 -0500] "GET /store-servlet/api/products HTTP/1.1" 200 8495

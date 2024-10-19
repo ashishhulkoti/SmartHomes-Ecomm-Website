@@ -1,0 +1,388 @@
+10-Oct-2024 12:45:26.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.94
+10-Oct-2024 12:45:26.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 5 2024 13:35:59 UTC
+10-Oct-2024 12:45:26.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.94.0
+10-Oct-2024 12:45:26.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+10-Oct-2024 12:45:26.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            14.6.1
+10-Oct-2024 12:45:26.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+10-Oct-2024 12:45:26.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home
+10-Oct-2024 12:45:26.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.3+9-LTS
+10-Oct-2024 12:45:26.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+10-Oct-2024 12:45:26.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/ashish/Documents/lib/apache-tomcat-9.0.94
+10-Oct-2024 12:45:26.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/ashish/Documents/lib/apache-tomcat-9.0.94
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/ashish/Documents/lib/apache-tomcat-9.0.94/conf/logging.properties
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Oct-2024 12:45:26.954 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/ashish/Documents/lib/apache-tomcat-9.0.94
+10-Oct-2024 12:45:26.955 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/ashish/Documents/lib/apache-tomcat-9.0.94
+10-Oct-2024 12:45:26.955 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/ashish/Documents/lib/apache-tomcat-9.0.94/temp
+10-Oct-2024 12:45:26.960 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/ashish/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10-Oct-2024 12:45:27.128 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Oct-2024 12:45:27.167 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [362] milliseconds
+10-Oct-2024 12:45:27.186 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Oct-2024 12:45:27.186 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.94]
+10-Oct-2024 12:45:27.194 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+10-Oct-2024 12:45:27.634 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Oct-2024 12:45:27.650 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [456] ms
+10-Oct-2024 12:45:27.651 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/docs]
+10-Oct-2024 12:45:27.664 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+10-Oct-2024 12:45:27.664 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/docs] startup failed due to previous errors
+10-Oct-2024 12:45:27.671 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/docs] has finished in [19] ms
+10-Oct-2024 12:45:27.671 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/manager]
+10-Oct-2024 12:45:27.685 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+10-Oct-2024 12:45:27.685 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/manager] startup failed due to previous errors
+10-Oct-2024 12:45:27.687 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/manager] has finished in [16] ms
+10-Oct-2024 12:45:27.687 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/examples]
+10-Oct-2024 12:45:27.771 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+10-Oct-2024 12:45:27.771 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+10-Oct-2024 12:45:27.772 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/examples] has finished in [85] ms
+10-Oct-2024 12:45:27.772 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/ROOT]
+10-Oct-2024 12:45:27.779 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+10-Oct-2024 12:45:27.779 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [] startup failed due to previous errors
+10-Oct-2024 12:45:27.780 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/ROOT] has finished in [8] ms
+10-Oct-2024 12:45:27.780 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/host-manager]
+10-Oct-2024 12:45:27.788 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+10-Oct-2024 12:45:27.788 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/host-manager] startup failed due to previous errors
+10-Oct-2024 12:45:27.789 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/host-manager] has finished in [9] ms
+10-Oct-2024 12:45:27.790 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Oct-2024 12:45:27.794 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [626] milliseconds
+10-Oct-2024 15:38:08.364 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/store-servlet]
+10-Oct-2024 15:39:58.489 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+10-Oct-2024 15:39:58.936 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Oct-2024 15:39:58.940 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [452] ms
+10-Oct-2024 15:40:14.337 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+10-Oct-2024 15:40:14.375 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+10-Oct-2024 15:40:14.400 INFO [cluster-ClusterId{value='67083bae7a3f6c0a3fd46432', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+10-Oct-2024 15:40:14.402 INFO [cluster-ClusterId{value='67083bae7a3f6c0a3fd46432', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1405834}
+10-Oct-2024 15:40:14.411 INFO [http-nio-8080-exec-1] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+10-Oct-2024 16:16:40.397 INFO [http-nio-8080-exec-17] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+10-Oct-2024 16:16:40.413 INFO [http-nio-8080-exec-17] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+10-Oct-2024 16:16:40.422 INFO [cluster-ClusterId{value='670844387a3f6c0a3fd46433', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:27017
+10-Oct-2024 16:16:40.423 INFO [cluster-ClusterId{value='670844387a3f6c0a3fd46433', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=300750}
+10-Oct-2024 16:16:40.425 INFO [http-nio-8080-exec-17] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:4, serverValue:4}] to localhost:27017
+10-Oct-2024 16:16:44.067 INFO [http-nio-8080-exec-18] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+10-Oct-2024 16:16:44.068 INFO [http-nio-8080-exec-18] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+10-Oct-2024 16:16:44.071 INFO [cluster-ClusterId{value='6708443c7a3f6c0a3fd46434', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:5, serverValue:5}] to localhost:27017
+10-Oct-2024 16:16:44.073 INFO [cluster-ClusterId{value='6708443c7a3f6c0a3fd46434', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=661791}
+10-Oct-2024 16:16:44.075 INFO [http-nio-8080-exec-18] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:6, serverValue:6}] to localhost:27017
+10-Oct-2024 16:17:04.866 INFO [http-nio-8080-exec-11] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+10-Oct-2024 16:17:04.869 INFO [http-nio-8080-exec-11] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+10-Oct-2024 16:17:04.871 INFO [cluster-ClusterId{value='670844507a3f6c0a3fd46435', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:7, serverValue:7}] to localhost:27017
+10-Oct-2024 16:17:04.872 INFO [cluster-ClusterId{value='670844507a3f6c0a3fd46435', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=305083}
+10-Oct-2024 16:17:04.874 INFO [http-nio-8080-exec-11] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:8, serverValue:8}] to localhost:27017
+10-Oct-2024 16:21:20.837 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/store-servlet]
+10-Oct-2024 16:21:20.844 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [store-servlet] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Oct-2024 16:21:20.846 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='67083bae7a3f6c0a3fd46432', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:21:20.846 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:21:20.846 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:21:20.846 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='6708443c7a3f6c0a3fd46434', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:21:20.847 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-3-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:21:20.847 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [cluster-ClusterId{value='670844507a3f6c0a3fd46435', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:229)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:210)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:21:20.847 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [CleanCursors-4-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:21:21.920 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:960)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:21:30.957 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+10-Oct-2024 16:21:31.390 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Oct-2024 16:21:31.392 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [436] ms
+10-Oct-2024 16:22:12.720 INFO [http-nio-8080-exec-24] com.mongodb.diagnostics.logging.JULLogger.log Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+10-Oct-2024 16:22:12.748 INFO [http-nio-8080-exec-24] com.mongodb.diagnostics.logging.JULLogger.log Cluster description not yet available. Waiting for 30000 ms before timing out
+10-Oct-2024 16:22:12.762 INFO [cluster-ClusterId{value='670845844496b868c86250e0', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:1, serverValue:9}] to localhost:27017
+10-Oct-2024 16:22:12.764 INFO [cluster-ClusterId{value='670845844496b868c86250e0', description='null'}-localhost:27017] com.mongodb.diagnostics.logging.JULLogger.log Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[7, 0, 14]}, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1138125}
+10-Oct-2024 16:22:12.771 INFO [http-nio-8080-exec-24] com.mongodb.diagnostics.logging.JULLogger.log Opened connection [connectionId{localValue:2, serverValue:10}] to localhost:27017
+10-Oct-2024 16:34:12.044 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/store-servlet]
+10-Oct-2024 16:34:12.059 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [store-servlet] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Oct-2024 16:34:12.059 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:34:16.692 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:960)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:34:22.081 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+10-Oct-2024 16:34:22.483 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Oct-2024 16:34:22.484 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [404] ms
+10-Oct-2024 16:36:12.567 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/store-servlet]
+10-Oct-2024 16:36:12.581 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [store-servlet] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Oct-2024 16:36:12.581 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:36:16.120 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:960)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 16:36:32.609 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+10-Oct-2024 16:36:32.973 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Oct-2024 16:36:32.975 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [367] ms
+10-Oct-2024 20:04:09.575 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/store-servlet]
+10-Oct-2024 20:04:09.638 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [store-servlet] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Oct-2024 20:04:09.639 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 20:04:13.637 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:960)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 20:04:29.664 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+10-Oct-2024 20:04:30.254 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Oct-2024 20:04:30.257 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [593] ms
+10-Oct-2024 20:40:12.617 INFO [cluster-ClusterId{value='67083bae7a3f6c0a3fd46432', description='null'}-localhost:27017] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [org.bson.codecs.DecoderContext$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [org.bson.codecs.DecoderContext$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1316)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1153)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1120)
+		at org.bson.codecs.DecoderContext$Builder.<init>(DecoderContext.java:52)
+		at org.bson.codecs.DecoderContext.builder(DecoderContext.java:46)
+		at com.mongodb.internal.connection.ProtocolHelper.getField(ProtocolHelper.java:150)
+		at com.mongodb.internal.connection.ProtocolHelper.isCommandOk(ProtocolHelper.java:80)
+		at com.mongodb.internal.connection.ProtocolHelper.isCommandOk(ProtocolHelper.java:85)
+		at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:301)
+		at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:258)
+		at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+		at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:38)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:180)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:124)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 20:43:51.270 INFO [cluster-ClusterId{value='670844507a3f6c0a3fd46435', description='null'}-localhost:27017] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [org.bson.codecs.DecoderContext$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [org.bson.codecs.DecoderContext$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1316)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1153)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1120)
+		at org.bson.codecs.DecoderContext.<init>(DecoderContext.java:29)
+		at org.bson.codecs.DecoderContext$Builder.build(DecoderContext.java:81)
+		at com.mongodb.internal.connection.ProtocolHelper.getField(ProtocolHelper.java:150)
+		at com.mongodb.internal.connection.ProtocolHelper.isCommandOk(ProtocolHelper.java:80)
+		at com.mongodb.internal.connection.ProtocolHelper.isCommandOk(ProtocolHelper.java:85)
+		at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:301)
+		at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:258)
+		at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+		at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:38)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:180)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:124)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 21:52:53.473 INFO [cluster-ClusterId{value='670844507a3f6c0a3fd46435', description='null'}-localhost:27017] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mongodb.connection.SplittablePayload]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mongodb.connection.SplittablePayload]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1316)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1153)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1120)
+		at com.mongodb.internal.connection.CommandMessage.<init>(CommandMessage.java:81)
+		at com.mongodb.internal.connection.CommandMessage.<init>(CommandMessage.java:73)
+		at com.mongodb.internal.connection.CommandHelper.getCommandMessage(CommandHelper.java:95)
+		at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+		at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:38)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:180)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:124)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 21:53:34.968 INFO [cluster-ClusterId{value='67083bae7a3f6c0a3fd46432', description='null'}-localhost:27017] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [com.mongodb.internal.connection.MessageSettings$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [com.mongodb.internal.connection.MessageSettings$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1316)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1153)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1120)
+		at com.mongodb.internal.connection.MessageSettings.<init>(MessageSettings.java:29)
+		at com.mongodb.internal.connection.MessageSettings$Builder.build(MessageSettings.java:66)
+		at com.mongodb.internal.connection.CommandHelper.getCommandMessage(CommandHelper.java:95)
+		at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+		at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:38)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:180)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:124)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 21:58:45.162 INFO [cluster-ClusterId{value='67083bae7a3f6c0a3fd46432', description='null'}-localhost:27017] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [org.bson.codecs.EncoderContext$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [org.bson.codecs.EncoderContext$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1316)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1153)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1120)
+		at org.bson.codecs.EncoderContext.<init>(EncoderContext.java:27)
+		at org.bson.codecs.EncoderContext$Builder.build(EncoderContext.java:67)
+		at com.mongodb.internal.connection.RequestMessage.addDocument(RequestMessage.java:188)
+		at com.mongodb.internal.connection.CommandMessage.encodeMessageBodyWithMetadata(CommandMessage.java:140)
+		at com.mongodb.internal.connection.RequestMessage.encode(RequestMessage.java:138)
+		at com.mongodb.internal.connection.CommandMessage.encode(CommandMessage.java:61)
+		at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:247)
+		at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+		at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:38)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:180)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:124)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 22:29:16.688 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/store-servlet]
+10-Oct-2024 22:29:16.699 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [store-servlet] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Oct-2024 22:29:16.700 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 22:29:20.954 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:960)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 22:29:36.721 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+10-Oct-2024 22:29:37.212 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Oct-2024 22:29:37.217 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [495] ms
+10-Oct-2024 22:31:47.315 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/store-servlet]
+10-Oct-2024 22:31:47.328 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [store-servlet] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+10-Oct-2024 22:31:47.329 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [store-servlet] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+ java.base/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 22:31:50.341 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:960)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+10-Oct-2024 22:32:07.360 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war]
+10-Oct-2024 22:32:08.046 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Oct-2024 22:32:08.048 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/ashish/Documents/lib/apache-tomcat-9.0.94/webapps/store-servlet.war] has finished in [688] ms
+10-Oct-2024 22:48:44.928 INFO [cluster-ClusterId{value='6708443c7a3f6c0a3fd46434', description='null'}-localhost:27017] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load [org.bson.codecs.EncoderContext$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [org.bson.codecs.EncoderContext$1]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1328)
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1316)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1153)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1120)
+		at org.bson.codecs.EncoderContext$Builder.<init>(EncoderContext.java:45)
+		at org.bson.codecs.EncoderContext.builder(EncoderContext.java:39)
+		at com.mongodb.internal.connection.RequestMessage.addDocument(RequestMessage.java:188)
+		at com.mongodb.internal.connection.CommandMessage.encodeMessageBodyWithMetadata(CommandMessage.java:140)
+		at com.mongodb.internal.connection.RequestMessage.encode(RequestMessage.java:138)
+		at com.mongodb.internal.connection.CommandMessage.encode(CommandMessage.java:61)
+		at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:247)
+		at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:83)
+		at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:38)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:180)
+		at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:124)
+		at java.base/java.lang.Thread.run(Thread.java:1583)

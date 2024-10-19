@@ -56,8 +56,24 @@ SmartHomes is an online retailer for smart home devices. This web application al
 
 ### Steps to Run:
 
-#### Frontend Setup:
-1. **Clone the repository:**
-   ```bash
+1. #### Clone the repository:
+```bash
    git clone https://github.com/your-username/SmartHomes-Ecomm-Website.git
    cd SmartHomes-Ecomm-Website
+```
+
+2. #### Frontend Setup:
+   ```bash
+   cd client
+   npm install
+   npm start
+   cd ..
+   ```
+
+3. #### Backend Setup:
+   ```bash
+   cd store-servlet
+   mvn clean install
+   cd ../apache-tomcat-9.0.94/bin
+   ./startup.sh 
+   ```
